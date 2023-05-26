@@ -36,14 +36,11 @@
 
       /* 
     PROBLEM 1: 
-    Select and log to the console all paragraph elements on the page using the appropriate DOM selector method.
+    Select and log to the console all paragraph elements on the page using querySelectorAll.
     */
       console.log("----------PROBLEM 1---------");
-      const paragraphTags = document.getElementsByTagName("p");
+      const paragraphTags = document.querySelectorAll("p");
       console.log(paragraphTags);
-      // OR
-      const paragraphTags2 = document.querySelectorAll("p");
-      console.log(paragraphTags2);
       /* 
     PROBLEM 2: 
     Select and log to the console the first element with the class "custom-style" using the appropriate DOM selector method.
@@ -53,20 +50,17 @@
       console.log(firstCustomStyle);
       /* 
     PROBLEM 3: 
-    Select and log to the console all elements with the class "custom-style" using the appropriate DOM selector method.
+    Select and log to the console all elements with the class "custom-style" using querySelectorAll.
     */
       console.log("----------PROBLEM 3---------");
       const allCustomStyles = document.querySelectorAll(".custom-style");
       console.log(allCustomStyles);
-      // OR
-      const allCustomStyles2 = document.getElementsByClassName("custom-style");
-      console.log(allCustomStyles2);
       /* 
     PROBLEM 4: 
     Convert an array-like object into an array using the Array.from() method.
     */
       console.log("----------PROBLEM 4---------");
-      const arrayLikeObject = document.getElementsByClassName("custom-style");
+      const arrayLikeObject = document.querySelectorAll(".custom-style");
       const array = Array.from(arrayLikeObject);
       console.log(array);
 
@@ -76,7 +70,7 @@
     Fix the error so that it prints all the paragraphs in the page as an array of `HTMLCollection`. 
     */
       console.log("----------PROBLEM 5---------");
-      let paragraphs = document.getElementsByTagName("p"); // fixed the typo and capilized the N in Name
+      let paragraphs = document.querySelectorAll("p"); // fixed the typo and capilized the N in Name
       console.log(paragraphs);
     </script>
   </body>
